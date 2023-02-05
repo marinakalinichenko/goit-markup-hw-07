@@ -1,0 +1,22 @@
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1158px;  
+}
+.hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
+.main-title {
+margin-bottom: 48px;
+
+}
+.team{
+    padding-bottom: 120px;
+    padding-top: 120px;}
+
+    .customers-item {
+        
+    flex-basis: calc((100% - 120px) / 6);
+        }
+     
