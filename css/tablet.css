@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;      
+}
+.hero {
+    padding-bottom: 108px; /*188px*/
+    }
+.main-title {
+    max-width: 496px; 
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 40px; /*48px;*/
+}
+        
+
+
+
+
+.team{
+    padding-bottom: 104px;
+    
+}
+.team-photo{
+    column-gap: 24px;
+    row-gap: 64px;
+}
+.customers-item {
+   max-width: 168px;
+  
+   }
+.customers-list {
+    column-gap:  ;
+    width: calc((100% - 48px) / 3);}
+   
+    
