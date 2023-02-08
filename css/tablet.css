@@ -1,9 +1,81 @@
 @media screen and (min-width: 768px) {
     .container {
-        width: 768px;      
+        max-width: 768px;     
+        
 }
+/*------------------------HEADER--------------------------*/
+.header-logo {
+    margin-right: 123px;
+    }
+.header{
+    padding-bottom: 10px; }
+
+.header-navigation {
+    margin-right: 118px;
+    align-items: center;
+    display: flex;
+}
+
+.header-list {
+    display:flex;
+    gap: 40px;  }
+
+.header-link {
+    position: relative;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+   color: var(--dark-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-link.current::after {
+    content: "";
+position: absolute;
+width: 100%;
+height: 4px;
+background: #404BBF;
+border-radius: 2px;
+left: 0;
+bottom: -22px;
+}
+.header-link:hover,
+.header-link:focus {
+    color: var(--pressed-state-color);
+    background-color:var(--btn-color);
+}
+.header-list .header-link.current {
+    color: var(--pressed-state-color);
+}
+.contacts {
+    position: relative;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color:  #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts:hover,
+.contacts:focus {
+    color: var(--pressed-state-color);
+   background-color: var(--btn-color);
+}
+.header-cont{
+    display: block;
+}
+.mobile-btn {
+    display: none;
+}
+
+/*--------------------------HERO-----------------------*/
 .hero {
     padding-bottom: 108px; /*188px*/
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+    ), url(../images/hw7/tablet-bg.jpg);
     }
 .main-title {
     max-width: 496px; 
@@ -11,11 +83,34 @@
         line-height: 1.07;
         margin-bottom: 40px; /*48px;*/
 }
-        
-
-
-
-
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero {
+  background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+), url(../images/hw7/tablet-bg-2x.jpg);
+}
+}
+/*----------------------SOLUTIONS----------------------*/
+.menu-solutions {
+gap: 72px;
+    column-gap: 24px;    
+}
+.menu-item {
+    flex-basis: calc((100% - 24px) / 2);
+    max-width: 356px;
+ 
+}  
+.menu-name{
+justify-content: left;  
+}
+/*--------------------TEAM------------------------------*/
+.team .container{
+    padding-left: 108px;
+    padding-right: 108px;
+}
 .team{
     padding-bottom: 104px;
     
@@ -24,12 +119,68 @@
     column-gap: 24px;
     row-gap: 64px;
 }
+/*------------------customers---------------------*/
+.customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .customers-item {
-   max-width: 168px;
-  
-   }
-.customers-list {
-    column-gap:  ;
-    width: calc((100% - 48px) / 3);}
+    max-width: 168px;
    
+    width: calc((100% - 48px) / 3);
+   
+}
+.customers-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+ column-gap: 24px ;
+ row-gap: 72px;
+}
+.customers> .container{
+    padding-left: 108px;
+    padding-right: 108px;
+}
+/*------------------FOOTER--------------------*/
+.footer-container{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 108px;
+  
+}
+.footer-link {
+    justify-content: flex-start;
+}
+.footer-text {
+    max-width: 264px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 24px;
+    margin-bottom: 72px;
+    }
     
+    .footer-field{
+       margin: 0;
+       padding: 0;
+     }
+     .footer-title{   
+        justify-content: flex-start;
+    }
+    .footer-title-sub{
+ 
+        justify-content: flex-start;
+       
+    }
+    
+    .footer-input {
+        width: 264px;
+        margin-bottom: 0;
+    }
+        .footer-form{
+            flex-wrap: nowrap;
+       gap: 24px;}
+
+       .modal{
+        width: 408px;
+       }
