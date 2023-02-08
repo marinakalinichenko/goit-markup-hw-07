@@ -34,11 +34,11 @@
                 </li>
             </ul>
         </nav>
-        <button type="button" class="mobile-btn">
+        <button type="button" class="mobile-btn" data-menu-open >
             <svg class="mobile-btn-icon" width="32" height="22">
             <use href="./images/icons.svg/symbol-defs.svg#menu_btn"></svg>
         </button>
-        <ul class="header-list list">
+        <ul class="header-cont list">
             <li class="header-item">
                 <a class="contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
@@ -49,9 +49,10 @@
         </div>
 
 
-        <div class="mobile-menu">
+        <div class="mobile-menu  is-hidden" data-menu >
             <div class="container mobile-menu-container">
-            <button type="button" class="mobile-menu_close-btn">
+                <div>
+            <button type="button" class="mobile-menu_close-btn" data-menu-close>
                 <svg class="mobile-menu_close-btn-icon" width="8" height="8">
                 <use href="./images/icons.svg/symbol-defs.svg#icon-close-black-18dp-2-1-2"></svg>
             </button>
@@ -66,7 +67,8 @@
                 <li class="mobile-menu-list-item">
                     <a class="mobile-menu-list-link link" href="">Contacts</a>
                 </li>
-            </ul>
+            </ul></div>
+            <div>
             <ul class="mobile-menu-cont list">
                 <li class="mobile-menu-cont-item">
                     <a class="mobile-menu-cont-tel link" href="tel:+11(000)1111111">+11 (000) 111-11-11 </a>
@@ -99,7 +101,7 @@
                         <use href="./images/icons.svg/symbol-defs[1].svg#icon-linkedin-1-1"></use>
                     </svg>
                 </a></li>
-            </ul>
+            </ul></div>
         </div>
         </div>
 
@@ -109,14 +111,14 @@
     </header>
     <main>
         <!--Hero-->
-        <!--
+       
         <section class="hero">
             <div class="container">
             <h1 class="main-title">Effective Solutions For Your Business</h1>
             <button class="modal-btn" type="button" data-modal-open>Order Service</button>
         </div>
-        </section>-->
-<!--
+        </section>
+
         <section class="solutions section">
             
             <div class="container">
@@ -162,8 +164,8 @@
                     </li>
                 </ul>
                 </div>
-        </section>-->
-        <!--
+        </section>
+        
         <section class="images">
             <div class="container">
             <h2 class="images-title title">What are we doing</h2>
@@ -179,15 +181,18 @@
                 </li>
             </ul>
             </div>
-        </section>-->
-    <!--
-        <section class="team "> section
+        </section>
+   
+        <section class="team "> 
             <div class="container">
             <h2 class="team-title title">Our Team</h2>
             <ul class="team-photo list">
                 <li class="team-item">
-                   
-                    <img src="./images/homework1/mark_guerrero.jpg" alt="man with a beard" width="264" height="260"> 
+                    <img src="./images/homework1/mark_guerrero.jpg" 
+                    alt="man with a beard" 
+                    srcset="./images/homework1/mark_guerrero.jpg 1x,
+                    ./images/hw7/img1-2x.jpg 2x"
+                    width="264" height="260"/> 
                 <div class="team-item-container">
                  <h3 class="team-name">Mark Guerrero</h3> 
             <p class="team-text">Product Designer</p>
@@ -220,7 +225,10 @@
                 </div>
         </li>
                 <li class="team-item">
-                    <img src="./images/homework1/tom_ford.jpg" alt="blond man" width="264" height="260"> 
+                    <img src="./images/homework1/tom_ford.jpg" alt="blond man"
+                    srcset="./images/homework1/tom_ford.jpg 1x,
+                    ./images/hw7/img2-2x.jpg 2x"
+                    width="264" height="260"> 
                 <div class="team-item-container">
                     <h3 class="team-name">Tom Ford</h3>
             <p class="team-text">Frontend Developer</p> 
@@ -252,7 +260,10 @@
                 </div>
         </li>
                 <li class="team-item">
-                    <img src="./images/homework1/camila_garcia.jpg" alt="woman" width="264" height="260"> 
+                    <img src="./images/homework1/camila_garcia.jpg" alt="woman" 
+                    srcset="./images/homework1/camila_garcia.jpg 1x,
+                    ./images/hw7/img3-2x.jpg 2x"
+                    width="264" height="260"> 
                 <div class="team-item-container">
                     <h3 class="team-name">Camila Garcia</h3>
                     <p class="team-text">Marketing</p>
@@ -284,7 +295,10 @@
                 </div>
                 </li>
                 <li class="team-item">
-                    <img src="./images/homework1/daniel_wilson.jpg" alt="man in a gray T-shirt" width="264" height="260"> 
+                    <img src="./images/homework1/daniel_wilson.jpg" alt="man in a gray T-shirt" 
+                    srcset="./images/homework1/daniel_wilson.jpg 1x,
+                    ./images/hw7/img4-2x.jpg 2x"
+                    width="264" height="260"> 
                 <div class="team-item-container">
                     <h3 class="team-name">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
@@ -317,8 +331,8 @@
             </li>
             </ul>
         </div>
-        </section>-->
-                <!--
+        </section>
+            
         <section class="customers">
             <div class="container">
 <h2 class="title">Customers</h2>
@@ -355,10 +369,10 @@
     </a></li>
 </ul>
 </div>
-        </section>-->
+        </section>
     </main>
 
-<!--
+
     <footer class="footer">
         <div class=" footer-container container ">
         <div class="">
@@ -404,8 +418,8 @@
         </button>
     </form></div>
     </div>
-    </footer>-->
-   <!--
+    </footer>
+   
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
@@ -462,6 +476,7 @@
     </div>
         </div>
    
-    <script src="./js/modal.js"></script>-->
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>  
 </body>
 </html>
