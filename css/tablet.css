@@ -3,6 +3,7 @@
         max-width: 768px;     
         
 }
+
 /*------------------------HEADER--------------------------*/
 .header-logo {
     margin-right: 123px;
@@ -76,7 +77,11 @@ bottom: -22px;
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
     ), url(../images/hw7/tablet-bg.jpg);
+    max-width: 768px;
+
     }
+   
+
 .main-title {
     max-width: 496px; 
         font-size: 56px;
@@ -184,3 +189,4 @@ justify-content: left;
        .modal{
         width: 408px;
        }
+       .mobile-menu {display: none;}
