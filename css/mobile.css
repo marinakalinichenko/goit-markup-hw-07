@@ -4,6 +4,15 @@
         margin-left: auto;
         margin-right: auto;
     }
-}
-
    
+}
+@media screen and (min-width: 428px) {
+.modal{
+ width: 392px;}
+ 
+}
+.header-cont{
+    display: none;}
+
+    .header-navigation {display: none;}
+    .header-list {display: none;}
