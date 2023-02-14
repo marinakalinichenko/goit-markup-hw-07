@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px)  {
     .container {
         max-width: 768px;     
         
@@ -72,14 +72,28 @@ bottom: -22px;
 
 /*--------------------------HERO-----------------------*/
 .hero {
-    padding-bottom: 108px; /*188px*/
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-    ), url(../images/hw7/tablet-bg.jpg);
-    max-width: 768px;
+    padding-bottom: 108px; /*188px*/}
+   
+    
+    @media   (min-width: 769px) {
+        .hero {background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+        ), url(../images/hw4/people-office.jpg);}}
+        @media (min-device-pixel-ratio: 2) and (min-width: 769px) ,
+        (min-resolution: 192dpi) and (min-width: 769px),
+        (min-resolution: 2dppx) and (min-width: 769px){
+        .hero {
+          background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+        ), url(../images/hw7/people-office-2x.jpg);
+        }
+        }
+  
+   
 
-    }
+    
    
 
 .main-title {
@@ -88,16 +102,7 @@ bottom: -22px;
         line-height: 1.07;
         margin-bottom: 40px; /*48px;*/
 }
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-.hero {
-  background-image: linear-gradient(
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)
-), url(../images/hw7/tablet-bg-2x.jpg);
-}
-}
+
 /*----------------------SOLUTIONS----------------------*/
 .menu-solutions {
 gap: 72px;
