@@ -32,7 +32,11 @@
                 </li>
             </ul>
         </nav>
-        <ul class="header-list list">
+        <button type="button" class="mobile-btn" data-menu-open >
+            <svg class="mobile-btn-icon" width="32" height="22">
+            <use href="./images/icons.svg/symbol-defs.svg#menu_btn"></svg>
+        </button>
+        <ul class="header-cont list">
             <li class="header-item">
                 <a class="contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
@@ -40,6 +44,62 @@
                 <a class="contacts link" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
             </li>
         </ul>
+        </div>
+        
+        <div class="mobile-menu  is-hidden" data-menu >
+            <div class="container mobile-menu-container">
+                <div>
+            <button type="button" class="mobile-menu_close-btn" data-menu-close>
+                <svg class="mobile-menu_close-btn-icon" width="8" height="8">
+                <use href="./images/icons.svg/symbol-defs.svg#icon-close-black-18dp-2-1-2"></svg>
+            </button>
+           
+            <ul class="mobile-menu-list list"> 
+                <li class="mobile-menu-list-item">
+                    <a class="mobile-menu-list-link link current" href="./index.html">Studio</a>
+                </li>
+                <li class="mobile-menu-list-item">
+                    <a class="mobile-menu-list-link link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="mobile-menu-list-item">
+                    <a class="mobile-menu-list-link link" href="">Contacts</a>
+                </li>
+            </ul></div>
+            <div>
+            <ul class="mobile-menu-cont list">
+                <li class="mobile-menu-cont-item">
+                    <a class="mobile-menu-cont-tel link" href="tel:+11(000)1111111">+11 (000) 111-11-11 </a>
+                </li>
+                <li class="mobile-menu-cont-item">
+                    <a class="mobile-menu-cont-email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile-soc-list list">
+                <li class="mobile-soc-item">
+                    <a href="" class="mobile-soc-link link">
+                    <svg class="mobile-soc-icon" width="24" height="24">
+                        <use href="./images/icons.svg/symbol-defs[1].svg#icon-instagram-2-1"></use>
+                    </svg>
+                </a></li>
+                <li class="mobile-soc-item">
+                    <a href="" class="mobile-soc-link link">
+                        <svg class="mobile-soc-icon" width="24" height="24">
+                        <use href="./images/icons.svg/symbol-defs[1].svg#icon-twitter-1-1"></use>
+                    </svg>
+                </a></li>
+                <li class="mobile-soc-item">
+                    <a href="" class="mobile-soc-link link">
+                    <svg class="mobile-soc-icon" width="24" height="24">
+                        <use href="./images/icons.svg/symbol-defs[1].svg#icon-facebook-1-1"></use>
+                    </svg>
+                </a></li>
+                <li class="mobile-soc-item"><a href="" class="mobile-soc-link link">
+                    <svg class="mobile-soc-icon" width="24" height="24">
+                        <use href="./images/icons.svg/symbol-defs[1].svg#icon-linkedin-1-1"></use>
+                    </svg>
+                </a></li>
+            </ul></div>
+        </div>
         </div>
     </header>
     <main>
@@ -60,7 +120,19 @@
 <li class="photos-item">
     <a class="photos-link link" href="">
         <div class="photos-top-wrap">
-    <img src="./images/hw2/img1.jpg" alt="pages" width="360" height="300">
+            <picture>
+            <source media="min-width:1160px"
+            srcset="./images/hw2/img1.jpg 1x,
+            ./images/hw7-port-desk/img1-2x.jpg 2x">
+            <source  media="min-width:768px"
+            srcset="./images/hw7-port-tab/img1-tab.jpg 1x,
+            ./images/hw7-port-tab/img1-tab-2x.jpg 2x">
+           
+    <source 
+             media="max-width:428px" srcset="./images/hw7-port-mob/img-mob1.jpg 1x,
+            ./images/hw7-port-mob/img-mob1-2x.jpg 2x">
+           
+            <img src="./images/hw2/img1.jpg" alt="pages" width="360" height="300"></picture>
     <p class="photos-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
     </div>
     <div class="photos-text">
@@ -74,7 +146,20 @@
     
     <a class="photos-link link" href="">
         <div class="photos-top-wrap">
-        <img src="./images/hw2/img2.jpg" alt="phone" width="360" height="300">
+            <picture>
+                <source media="min-width:1160px"
+                srcset="./images/hw2/img2.jpg 1x,
+                ./images/hw7-port-desk/img2-2x.jpg 2x">
+                <source  media="min-width:768px"
+                srcset="./images/hw7-port-tab/img2-tab.jpg 1x,
+                ./images/hw7-port-tab/img2-tab-2x.jpg 2x">
+               
+        <source 
+                 media="min-width:320px" srcset="./images/hw7-port-mob/img-mob2.jpg 1x,
+                ./images/hw7-port-mob/img-mob2-2x.jpg 2x">
+               
+               
+        <img src="./images/hw2/img2.jpg" alt="phone" width="360" height="300"></picture>
         <p class="photos-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
     </div>
         <div class="photos-text">
@@ -86,7 +171,17 @@
 <li class="photos-item">
     <a class="photos-link link" href="">
         <div class="photos-top-wrap">
-    <img src="./images/hw2/img3.jpg" alt="laptop" width="360" height="300">
+            <picture>
+                <source media="min-width:1160px"
+                srcset="./images/hw2/img3.jpg 1x,
+                ./images/hw7-port-desk/img3-2x.jpg 2x">
+                <source  media="min-width:768px"
+                srcset="./images/hw7-port-tab/img3-tab.jpg 1x,
+                ./images/hw7-port-tab/img3-tab-2x.jpg 2x"> 
+        <source 
+                 media="min-width:320px" srcset="./images/hw7-port-mob/img-mob3.jpg 1x,
+                ./images/hw7-port-mob/img-mob3-2x.jpg 2x">
+    <img src="./images/hw2/img3.jpg" alt="laptop" width="360" height="300"></picture>
     <p class="photos-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
     </div>
     <div class="photos-text">
@@ -98,7 +193,17 @@
 <li class="photos-item" >
     <a class="photos-link link" href="">
         <div class="photos-top-wrap">
-    <img src="./images/hw2/img4.jpg" alt="helm" width="360" height="300">
+            <picture>
+                <source media="min-width:1160px"
+                srcset="./images/hw2/img4.jpg 1x,
+                ./images/hw7-port-desk/img4-2x.jpg 2x">
+                <source  media="min-width:768px"
+                srcset="./images/hw7-port-tab/img4-tab.jpg 1x,
+                ./images/hw7-port-tab/img4-tab-2x.jpg 2x"> 
+        <source 
+                 media="min-width:320px" srcset="./images/hw7-port-mob/img-mob4.jpg 1x,
+                ./images/hw7-port-mob/img-mob4-2x.jpg 2x">
+    <img src="./images/hw2/img4.jpg" alt="helm" width="360" height="300"></picture>
     <p class="photos-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
     </div>
     <div class="photos-text">
@@ -110,6 +215,16 @@
 <li class="photos-item">
     <a class="photos-link link" href="">
         <div class="photos-top-wrap">
+            <picture>
+                <source media="min-width:1160px"
+                srcset="./images/hw2/img5.jpg 1x,
+                ./images/hw7-port-desk/img5-2x.jpg 2x">
+                <source  media="min-width:768px"
+                srcset="./images/hw7-port-tab/img5-tab.jpg 1x,
+                ./images/hw7-port-tab/img5-tab-2x.jpg 2x"> 
+        <source 
+                 media="min-width:320px" srcset="./images/hw7-port-mob/img-mob5.jpg 1x,
+                ./images/hw7-port-mob/img-mob5-2x.jpg 2x">
         <img src="./images/hw2/img5.jpg" alt="moon" width="360" height="300">
         <p class="photos-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
        </div>
@@ -122,6 +237,16 @@
 <li class="photos-item">
     <a class="photos-link link" href="">
         <div class="photos-top-wrap">
+            <picture>
+                <source media="min-width:1160px"
+                srcset="./images/hw2/img6.jpg 1x,
+                ./images/hw7-port-desk/img6-2x.jpg 2x">
+                <source  media="min-width:768px"
+                srcset="./images/hw7-port-tab/img6-tab.jpg 1x,
+                ./images/hw7-port-tab/img6-tab-2x.jpg 2x"> 
+        <source 
+                 media="min-width:320px" srcset="./images/hw7-port-mob/img-mob6.jpg 1x,
+                ./images/hw7-port-mob/img-mob6-2x.jpg 2x">
         <img src="./images/hw2/img6.jpg" alt="woman in orange" width="360" height="300">
         <p class="photos-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>   
         </div>
@@ -134,6 +259,16 @@
 <li class="photos-item">
     <a class="photos-link link" href=""> 
         <div class="photos-top-wrap">
+            <picture>
+                <source media="min-width:1160px"
+                srcset="./images/hw2/img7.jpg 1x,
+                ./images/hw7-port-desk/img7-2x.jpg 2x">
+                <source  media="min-width:768px"
+                srcset="./images/hw7-port-tab/img7-tab.jpg 1x,
+                ./images/hw7-port-tab/img7-tab-2x.jpg 2x"> 
+        <source 
+                 media="min-width:320px" srcset="./images/hw7-port-mob/img-mob7.jpg 1x,
+                ./images/hw7-port-mob/img-mob7-2x.jpg 2x">
         <img src="./images/hw2/img7.jpg" alt="blonde" width="360" height="300">
         <p class="photos-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
         </div>
@@ -146,6 +281,16 @@
 <li class="photos-item">
     <a class="photos-link link" href="">
         <div class="photos-top-wrap">
+            <picture>
+                <source media="min-width:1160px"
+                srcset="./images/hw2/img8.jpg 1x,
+                ./images/hw7-port-desk/img8-2x.jpg 2x">
+                <source  media="min-width:768px"
+                srcset="./images/hw7-port-tab/img8-tab.jpg 1x,
+                ./images/hw7-port-tab/img8-tab-2x.jpg 2x"> 
+        <source 
+                 media="min-width:320px" srcset="./images/hw7-port-mob/img-mob8.jpg 1x,
+                ./images/hw7-port-mob/img-mob8-2x.jpg 2x">
     <img src="./images/hw2/img8.jpg" alt="woman carries a bag of vegetables" width="360" height="300">
     <p class="photos-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
    </div>
@@ -158,6 +303,16 @@
 <li class="photos-item">
     <a class="photos-link link" href="">
         <div class="photos-top-wrap">
+            <picture>
+                <source media="min-width:1160px"
+                srcset="./images/hw2/img9.jpg 1x,
+                ./images/hw7-port-desk/img9-2x.jpg 2x">
+                <source  media="min-width:768px"
+                srcset="./images/hw7-port-tab/img9-tab.jpg 1x,
+                ./images/hw7-port-tab/img9-tab-2x.jpg 2x"> 
+        <source 
+                 media="min-width:320px" srcset="./images/hw7-port-mob/img-mob9.jpg 1x,
+                ./images/hw7-port-mob/img-mob9-2x.jpg 2x">
         <img src="./images/hw2/img9.jpg" alt="cup of Coffee" width="360" height="300">
     <p class="photos-top-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
     </div>
@@ -218,5 +373,6 @@
     </form></div>
 </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>  
 </body>
 </html>
