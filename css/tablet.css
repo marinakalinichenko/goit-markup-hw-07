@@ -195,3 +195,15 @@ justify-content: left;
         width: 408px;
        }
        .mobile-menu {display: none;}
+
+       .photos-list {
+        flex-basis: calc((100%-192px)/9);
+       
+       column-gap: 16px;
+       justify-content: flex-start;
+       }
+       .filters-list{
+        
+        flex-basis: calc((100% - 96px)/5);
+        justify-content: center;
+       
